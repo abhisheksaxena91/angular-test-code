@@ -1,0 +1,139 @@
+$fontsize11:11px;
+$fontsize12:12px;
+$fontsize14:14px;
+$fontsize15:15px;
+$fontsize16:16px;
+$fontsize18:18px;
+$fontsize20:20px;
+$fontsize22:22px;
+$fontsize24:24px;
+$fontsize25:25px;
+$fontsize28:28px;
+$fontsize40:40px;
+$fontsize30:30px;
+
+$color0:#ffffff;
+$color1:#003f62;
+$color2:#e4eaee;
+$color3:#f8f8f8;
+$color4:#ff5100;
+$color5:#728fa0;
+$color6:#728fa0;
+$color7:#28435d;
+$color8:#dfdede;
+$color9:#d5dee6;
+$color10:#676c83;
+$color11:#b6bacc;
+$color12:#b33838;
+$color13:#e7e8ed;
+$color14:#f8f8f8;
+$color15:#d1d9e1;
+$color16:#f7f7f7;
+$color17:#819ab2;
+$color18:#7a96a6;
+
+
+
+
+/*Extend Classes Start*/
+.shadowbotton
+{
+  box-shadow: 0px 0px 8px 2px $color8;
+}
+.shadowfour
+{
+  box-shadow: 0px 0px 8px 2px $color8;
+}
+.btn.btn-primary
+{
+    background:$color4;
+    border-color:$color4;
+    font-size: $fontsize14;
+    color: $color0;
+    outline: none;
+    &:hover
+    {
+        background:$color4;
+        border-color:$color4;
+    }
+}
+.btnlg
+{
+    width: 200px;
+}
+.btnmedium
+{
+    width: 100px;
+}
+.authpage-container
+{
+    width: 768px;
+    border-radius: 6px;
+    margin: 0px auto;
+    background: $color0;
+    padding: 37px 50px 50px 50px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 8px 2px $color8;
+}
+.authpage-container-heading
+{
+    text-align: center;
+    font-size: $fontsize24;
+    color: $color1;
+    margin-bottom: 30px;
+}
+.linksignin
+        {
+            p
+            {
+                font-size: $fontsize16;
+                color: $color1;
+                font-weight: bold;
+                text-align: center;
+                margin: 0px;
+                margin-top: 20px;
+                position: relative;
+                top: 16px;  
+                a
+                {
+                    color: $color4;
+                    &:hover
+                    {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .varlabel
+        {
+            font-size: $fontsize14;
+            color: $color10;
+            display:block;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+        .inputselectcommon
+        {
+            border: 1px solid $color9;
+            padding: 6px 10px;
+            border-radius: 6px;
+            width: 100%;
+            font-size: $fontsize12;
+        }
+        .inputvalidation
+        {
+            position: absolute;
+            bottom: -16px;
+            font-size: $fontsize11;
+            left: 11px;
+            color: $color12;
+        }
+        .insidecontainer
+        {
+            border: 1px solid $color9;
+            padding: 30px 60px;
+            border-radius: 6px;
+        }
+/*Extend Classes Close*/
+

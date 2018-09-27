@@ -1,0 +1,77 @@
+@import '../../assets/scss/varaible.scss';
+.stockcoverage
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 6px;
+
+        .stockList-section
+        {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        .stockcoverage-q
+        {
+            position: relative;
+                h3 
+                {
+                    font-size:$fontsize18;
+                    color:$color1;
+                    padding-left: 15px;
+                }
+                &::before
+                {
+                    position:absolute;
+                    top: -10px;
+                    left:0px;
+                    border: 5px solid $color6;
+                    height: 100px;
+                    content: '';
+                }
+        }
+        .stockcoverage-checkbox
+        {
+            ul
+            {
+                li
+                {
+                    margin-bottom: 22px;
+                        label
+                        {
+                            font-size: $fontsize14;
+                            color: $color7;
+                            cursor: pointer;
+                            display: inline-block;
+                            position: relative;
+                            padding-left: 26px;
+                        
+                            &::before
+                            {
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                position: absolute;  
+                                left: 0;
+                                background: url('../../assets/images/uncheck.png') left center no-repeat;
+                                margin-top: 2px;
+                            }
+                        }
+                        input[type="checkbox"]
+                        {
+                                display: none;
+                        }
+                        input[type=checkbox]:checked + label:before
+                        {  
+                        
+                            background: url('../../assets/images/checked.png') left center no-repeat;  
+                        } 
+                }
+            }
+            
+        }
+        .btnstyle
+        {
+            text-align: center;
+            margin:50px 0px 50px 0px
+        }
+}                

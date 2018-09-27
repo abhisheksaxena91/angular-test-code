@@ -1,0 +1,14 @@
+<div  *ngIf="visible" class="dialog popupstockcoverage stockstatus">
+  <ng-content></ng-content>
+    <select (change)="onChange($event.target)">
+      <option value="">select</option>
+      <option value="1" [selected]="selectorIndex == 1">Inverstor</option>
+      <option value="2" [selected]="selectorIndex == 2">Non-Investor</option>
+    </select>
+  
+    <button type="button" class="btn btn-primary btnmedium pscbtn" >Confirm</button>
+
+</div>
+<div *ngIf="visible" class="overlay-layer" ></div>
+
+

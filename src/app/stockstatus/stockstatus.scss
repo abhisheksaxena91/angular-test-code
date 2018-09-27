@@ -1,0 +1,21 @@
+@import '../../assets/scss/varaible.scss';
+.select-table
+{
+    font-size: $fontsize12;
+    color: $color1;
+    border: 1px solid $color15;
+    padding: 3px;
+    border-radius: 5px;
+    &:hover
+    {
+        outline: none;
+    }
+    &:focus
+    {
+        outline: none;
+    }
+    &.active
+    {
+        outline: none;
+    }
+}

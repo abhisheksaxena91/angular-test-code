@@ -1,0 +1,81 @@
+@import '../../assets/scss/varaible.scss';
+.container-signup
+{
+    @extend .authpage-container;
+    h2
+    {
+        @extend .authpage-container-heading;
+    }
+    form
+    {
+        ul
+        {
+            @extend .insidecontainer;
+            li 
+            {
+                width: 45%;
+                float: left;
+                margin-right: 10%;
+                margin-bottom: 25px;
+                position: relative;
+                &:nth-child(2n+2)
+                {
+                    margin-right: 0px;
+                }
+                label
+                {
+                   @extend .varlabel;
+                }
+                input, select 
+                {
+                    @extend .inputselectcommon;
+                    &::-webkit-input-placeholder
+                    {
+                        color: $color11;
+                    }
+                    &::-moz-placeholder
+                    {
+                        color: $color11;
+                    }
+                    &:-ms-input-placeholder
+                    {
+                        color: $color11;  
+                    }
+                    &:-moz-placeholder
+                    {
+                        color: $color11;  
+                    }
+                    &.ng-invalid.ng-touched
+                    {
+                      border: 1px solid $color12;  
+                    }
+                }
+                .error-message
+                {
+                   @extend .inputvalidation;
+                }
+                
+            }
+        }
+        .btn[disabled]
+        {
+            opacity: 1;
+        }
+        .signup-btnsection
+        {
+            margin-top: 0px;
+            clear: both;
+            display: inline-block;
+            width: 100%;
+            .signup-btn
+            {
+                margin: 0px auto;
+                display: block;
+                margin-top: 15px;
+            }
+        }
+        
+        
+    }
+    @extend .linksignin;
+}

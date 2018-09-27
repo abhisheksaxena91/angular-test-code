@@ -1,0 +1,61 @@
+@import '../../assets/scss/varaible.scss';
+.marketthemequestion-wrapper
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 6px;
+
+        .stockList-section
+        {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        .stockcoverage-q
+        {
+            position: relative;
+                h3 
+                {
+                    font-size:$fontsize18;
+                    color:$color1;
+                    padding-left: 15px;
+                }
+                &::before
+                {
+                    position:absolute;
+                    top: -10px;
+                    left:0px;
+                    border: 5px solid $color6;
+                    height: 100px;
+                    content: '';
+                }
+        }
+        .btnstyle
+        {
+            text-align: center;
+            margin:50px 0px 50px 0px
+        }
+        .marketthemequestion
+        {
+            textarea
+            {
+                width: 100%;
+                min-height: 150px;
+                resize: none;
+                border: 1px solid $color17;
+                border-radius: 3px;
+                background: transparent;
+                padding: 15px;
+                font-size: $fontsize16;
+                color: $color1;
+                overflow: auto;
+                &:active
+                {
+                    outline: none;
+                }
+                &:focus
+                {
+                    outline: none;
+                }
+            }
+        }
+}                

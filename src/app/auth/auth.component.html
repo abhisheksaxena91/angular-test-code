@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="container-signup">
+      <h2>Create your account</h2>
+    <app-list-errors [errors]="errors"></app-list-errors>
+    <form [formGroup]="authForm" (ngSubmit)="submitForm()">
+          <ul>
+                <li>
+                  <label>First Name</label>
+                    <input formControlName="firstName" placeholder="Enter first name" class="" type="text" />
+                    <ng-container *ngFor="let validation of validation_messages.firstName">
+                        <div class="error-message" *ngIf="authForm.get('firstName').hasError(validation.type) && ( authForm.get('firstName').touched)">
+                          {{ validation.message }}
+                        </div>
+                    </ng-container>
+                </li>
+                
+                <li>
+                  <label>Last Name</label>
+                    <input formControlName="lastName" placeholder="Enter last name" class="" type="text" />
+                    <ng-container *ngFor="let validation of validation_messages.lastName">
+                        <div class="error-message" *ngIf="authForm.get('lastName').hasError(validation.type) && ( authForm.get('lastName').touched)">
+                          {{ validation.message }}
+                        </div>
+                    </ng-container>
+                </li>
+                
+                <li>
+                  <label>Email Address</label>	
+                  <input formControlName="email" placeholder="Enter your email address" class="" type="email" />
+                  <ng-container *ngFor="let validation of validation_messages.email">
+                    <div class="error-message" *ngIf="authForm.get('email').hasError(validation.type) && (authForm.get('email').dirty || authForm.get('email').touched)">
+                        {{ validation.message }}
+                    </div>
+                  </ng-container>
+                </li>
+                
+                <li>
+                    <label>Employer</label>	
+                    <input formControlName="employer" placeholder="Enter your employer name" class="" type="text" />
+                    <ng-container *ngFor="let validation of validation_messages.employer">
+                        <div class="error-message" *ngIf="authForm.get('employer').hasError(validation.type) && (authForm.get('employer').touched)">
+                          {{ validation.message }}
+                        </div>
+                    </ng-container>
+                </li>
+                                
+                <li>
+                    <label>Phone</label>
+                    <input formControlName="mobileNumber" placeholder="Enter your mobile no." class="" type="text" />
+                    <ng-container *ngFor="let validation of validation_messages.mobileNumber">
+                        <div class="error-message" *ngIf="authForm.get('mobileNumber').hasError(validation.type) && (authForm.get('mobileNumber').touched)">
+                          {{ validation.message }}
+                        </div>
+                    </ng-container>
+                </li>
+               
+                <li>
+                  <label>Buy or Sell side</label>
+                    <select formControlName="buySellSide">
+                        <option value="">Please select</option>
+                        <option value="buy">Buy</option>
+                        <option value="sell">Sell</option>
+                    </select>     
+                    <ng-container *ngFor="let validation of validation_messages.buySellSide">
+                        <div class="error-message" *ngIf="authForm.get('buySellSide').hasError(validation.type) && (authForm.get('buySellSide').touched)">
+                        {{ validation.message }}
+                        </div>
+                    </ng-container>        
+                </li>
+               <div class="signup-btnsection">
+                  <button class="btn btn-primary btnlg signup-btn" [disabled]="!authForm.valid" type="submit">
+                    Create Account
+                  </button>
+               </div>
+          </ul>
+    </form>
+    <div class="linksignin">
+      <p routerLink="/login">Have an account? <a href="javascript:void();">Sign In</a></p>
+    </div>
+  </div>
+</div>

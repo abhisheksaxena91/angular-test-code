@@ -1,0 +1,24 @@
+@import '../assets/scss/varaible.scss';
+.headerarea
+{
+    background:$color0;
+    padding-top: 13px;
+    padding-bottom: 25px;
+    @extend .shadowbotton;
+        .headertitle
+        {
+            h1
+            {
+                font-size:$fontsize22;
+                color:$color1;
+                text-align: left;
+                position: relative;
+                top: 11px;
+            } 
+        }
+}
+.footer
+{
+    width: 100%;
+    height: 200px;
+}

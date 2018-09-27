@@ -1,0 +1,17 @@
+@import '../../../assets/scss/varaible.scss';
+.stockstatus
+  {
+      select
+      {
+        border: 1px solid #e7e8ed;
+        padding: 8px;
+        border-radius: 6px;
+        width: 90%;
+        margin: 0px auto;
+        color: #003f62;
+        display: block;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+      }
+  }

@@ -1,0 +1,463 @@
+<div class="container-fluid">
+    <div class="progressbar-section">
+        <div class="btnnextpre section-prevoius">
+            <button type="button" (click)="updateStep()"></button>
+        </div>
+        <ul>
+            <li class="inactive ">
+                <span>01</span>
+            </li>
+            <li class="inactive active">
+                <span>02</span>
+            </li>
+            <li class="inactive">
+                <span>03</span>
+            </li>
+            <li class="inactive">
+                <span>04</span>
+            </li>
+            <li class="inactive">
+                <span>05</span>
+            </li>
+            <li class="inactive">
+                <span>06</span>
+            </li>
+        </ul>
+        <div class="btnnextpre section-next">
+            <button type="button" (click)="submitStockStatusList()"></button>
+        </div>
+    </div>
+    <div class="row pagetitle-inner">
+        <div class="col-md-12">
+           
+        </div>
+    </div>
+    <div class="rating-table">
+        <table celpadding="0" celspacing="0">
+          <tr>
+              <th>Management</th>
+              <th>Ratings</th>
+          </tr>
+          <tr>
+              <td>Effectiveness of CEO</td>
+              <td>
+                <div class="rating-five">
+                  <ul>
+                    <li>
+                        <input id="ratingone" type="checkbox"/>
+                        <label for="ratingone">1</label>
+                    </li>
+                    <li>
+                        <input id="ratingtwo" type="checkbox"/>
+                        <label for="ratingtwo">2</label>
+                    </li>
+                    <li>
+                        <input id="ratingthree" type="checkbox"/>
+                        <label for="ratingthree">3</label>
+                    </li>
+                    <li>
+                        <input id="ratingfour" type="checkbox"/>
+                        <label for="ratingfour">4</label>
+                    </li>
+                    <li>
+                        <input id="ratingfive" type="checkbox"/>
+                        <label for="ratingfive">5</label>
+                    </li>
+                  </ul>
+                  
+         
+                </div>
+                <div class="outoffive">
+                    (<span>5</span>/5)
+                </div>
+              </td>
+          </tr>
+          <tr>
+              <td>Effectiveness of CFO</td>
+              <td>
+                  <div class="rating-five">
+                      <ul>
+                        <li>
+                            <input id="ratingone" type="checkbox"/>
+                            <label for="ratingone">1</label>
+                        </li>
+                        <li>
+                            <input id="ratingtwo" type="checkbox"/>
+                            <label for="ratingtwo">2</label>
+                        </li>
+                        <li>
+                            <input id="ratingthree" type="checkbox"/>
+                            <label for="ratingthree">3</label>
+                        </li>
+                        <li>
+                            <input id="ratingfour" type="checkbox"/>
+                            <label for="ratingfour">4</label>
+                        </li>
+                        <li>
+                            <input id="ratingfive" type="checkbox"/>
+                            <label for="ratingfive">5</label>
+                        </li>
+                      </ul>
+                      
+             
+                    </div>
+                    <div class="outoffive">
+                        (<span>5</span>/5)
+                    </div>
+              </td>
+          </tr>
+          <tr>
+              <td>Credibility</td>
+              <td>
+                  <div class="rating-five">
+                      <ul>
+                        <li>
+                            <input id="ratingone" type="checkbox"/>
+                            <label for="ratingone">1</label>
+                        </li>
+                        <li>
+                            <input id="ratingtwo" type="checkbox"/>
+                            <label for="ratingtwo">2</label>
+                        </li>
+                        <li>
+                            <input id="ratingthree" type="checkbox"/>
+                            <label for="ratingthree">3</label>
+                        </li>
+                        <li>
+                            <input id="ratingfour" type="checkbox"/>
+                            <label for="ratingfour">4</label>
+                        </li>
+                        <li>
+                            <input id="ratingfive" type="checkbox"/>
+                            <label for="ratingfive">5</label>
+                        </li>
+                      </ul>
+                      
+             
+                    </div>
+                    <div class="outoffive">
+                        (<span>5</span>/5)
+                    </div>
+              </td>
+          </tr>
+          <tr>
+              <td>Operational Management</td>
+              <td>
+                  <div class="rating-five">
+                      <ul>
+                        <li>
+                            <input id="ratingone" type="checkbox"/>
+                            <label for="ratingone">1</label>
+                        </li>
+                        <li>
+                            <input id="ratingtwo" type="checkbox"/>
+                            <label for="ratingtwo">2</label>
+                        </li>
+                        <li>
+                            <input id="ratingthree" type="checkbox"/>
+                            <label for="ratingthree">3</label>
+                        </li>
+                        <li>
+                            <input id="ratingfour" type="checkbox"/>
+                            <label for="ratingfour">4</label>
+                        </li>
+                        <li>
+                            <input id="ratingfive" type="checkbox"/>
+                            <label for="ratingfive">5</label>
+                        </li>
+                      </ul>
+                      
+             
+                    </div>
+                    <div class="outoffive">
+                        (<span>5</span>/5)
+                    </div>
+              </td>
+          </tr>
+          <tr>
+              <td>Cohesive & Competent Leadership</td>
+              <td>
+                  <div class="rating-five">
+                      <ul>
+                        <li>
+                            <input id="ratingone" type="checkbox"/>
+                            <label for="ratingone">1</label>
+                        </li>
+                        <li>
+                            <input id="ratingtwo" type="checkbox"/>
+                            <label for="ratingtwo">2</label>
+                        </li>
+                        <li>
+                            <input id="ratingthree" type="checkbox"/>
+                            <label for="ratingthree">3</label>
+                        </li>
+                        <li>
+                            <input id="ratingfour" type="checkbox"/>
+                            <label for="ratingfour">4</label>
+                        </li>
+                        <li>
+                            <input id="ratingfive" type="checkbox"/>
+                            <label for="ratingfive">5</label>
+                        </li>
+                      </ul>
+                      
+             
+                    </div>
+                    <div class="outoffive">
+                        (<span>5</span>/5)
+                    </div>
+              </td>
+          </tr>
+          <tr>
+              <td>Leadership Long-Term Focus</td>
+              <td>
+                  <div class="rating-five">
+                      <ul>
+                        <li>
+                            <input id="ratingone" type="checkbox"/>
+                            <label for="ratingone">1</label>
+                        </li>
+                        <li>
+                            <input id="ratingtwo" type="checkbox"/>
+                            <label for="ratingtwo">2</label>
+                        </li>
+                        <li>
+                            <input id="ratingthree" type="checkbox"/>
+                            <label for="ratingthree">3</label>
+                        </li>
+                        <li>
+                            <input id="ratingfour" type="checkbox"/>
+                            <label for="ratingfour">4</label>
+                        </li>
+                        <li>
+                            <input id="ratingfive" type="checkbox"/>
+                            <label for="ratingfive">5</label>
+                        </li>
+                      </ul>
+                      
+             
+                    </div>
+                    <div class="outoffive">
+                        (<span>5</span>/5)
+                    </div>
+              </td>
+          </tr>
+                <tr>
+                    <th>Board</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Effectiveness of CEO</td>
+                    <td>
+                        <div class="rating-five">
+                            <ul>
+                              <li>
+                                  <input id="ratingone" type="checkbox"/>
+                                  <label for="ratingone">1</label>
+                              </li>
+                              <li>
+                                  <input id="ratingtwo" type="checkbox"/>
+                                  <label for="ratingtwo">2</label>
+                              </li>
+                              <li>
+                                  <input id="ratingthree" type="checkbox"/>
+                                  <label for="ratingthree">3</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfour" type="checkbox"/>
+                                  <label for="ratingfour">4</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfive" type="checkbox"/>
+                                  <label for="ratingfive">5</label>
+                              </li>
+                            </ul>
+                            
+                   
+                          </div>
+                          <div class="outoffive">
+                              (<span>5</span>/5)
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Risk Management</td>
+                    <td>
+                        <div class="rating-five">
+                            <ul>
+                              <li>
+                                  <input id="ratingone" type="checkbox"/>
+                                  <label for="ratingone">1</label>
+                              </li>
+                              <li>
+                                  <input id="ratingtwo" type="checkbox"/>
+                                  <label for="ratingtwo">2</label>
+                              </li>
+                              <li>
+                                  <input id="ratingthree" type="checkbox"/>
+                                  <label for="ratingthree">3</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfour" type="checkbox"/>
+                                  <label for="ratingfour">4</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfive" type="checkbox"/>
+                                  <label for="ratingfive">5</label>
+                              </li>
+                            </ul>
+                            
+                   
+                          </div>
+                          <div class="outoffive">
+                              (<span>5</span>/5)
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Remuneration Policy</td>
+                    <td>
+                        <div class="rating-five">
+                            <ul>
+                              <li>
+                                  <input id="ratingone" type="checkbox"/>
+                                  <label for="ratingone">1</label>
+                              </li>
+                              <li>
+                                  <input id="ratingtwo" type="checkbox"/>
+                                  <label for="ratingtwo">2</label>
+                              </li>
+                              <li>
+                                  <input id="ratingthree" type="checkbox"/>
+                                  <label for="ratingthree">3</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfour" type="checkbox"/>
+                                  <label for="ratingfour">4</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfive" type="checkbox"/>
+                                  <label for="ratingfive">5</label>
+                              </li>
+                            </ul>
+                            
+                   
+                          </div>
+                          <div class="outoffive">
+                              (<span>5</span>/5)
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Environmental, Social, and Corporate Governance</td>
+                    <td>
+                        <div class="rating-five">
+                            <ul>
+                              <li>
+                                  <input id="ratingone" type="checkbox"/>
+                                  <label for="ratingone">1</label>
+                              </li>
+                              <li>
+                                  <input id="ratingtwo" type="checkbox"/>
+                                  <label for="ratingtwo">2</label>
+                              </li>
+                              <li>
+                                  <input id="ratingthree" type="checkbox"/>
+                                  <label for="ratingthree">3</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfour" type="checkbox"/>
+                                  <label for="ratingfour">4</label>
+                              </li>
+                              <li>
+                                  <input id="ratingfive" type="checkbox"/>
+                                  <label for="ratingfive">5</label>
+                              </li>
+                            </ul>
+                            
+                   
+                          </div>
+                          <div class="outoffive">
+                              (<span>5</span>/5)
+                          </div>
+                    </td>
+                </tr>
+          <tr>
+              <th>Financials</th>
+              <th>Ratings</th>
+          </tr>
+          <tr>
+              <td>Effectiveness of CEO</td>
+              <td>
+                  <div class="rating-five">
+                      <ul>
+                        <li>
+                            <input id="ratingone" type="checkbox"/>
+                            <label for="ratingone">1</label>
+                        </li>
+                        <li>
+                            <input id="ratingtwo" type="checkbox"/>
+                            <label for="ratingtwo">2</label>
+                        </li>
+                        <li>
+                            <input id="ratingthree" type="checkbox"/>
+                            <label for="ratingthree">3</label>
+                        </li>
+                        <li>
+                            <input id="ratingfour" type="checkbox"/>
+                            <label for="ratingfour">4</label>
+                        </li>
+                        <li>
+                            <input id="ratingfive" type="checkbox"/>
+                            <label for="ratingfive">5</label>
+                        </li>
+                      </ul>
+                      
+             
+                    </div>
+                    <div class="outoffive">
+                        (<span>5</span>/5)
+                    </div>
+              </td>
+          </tr>
+        </table>
+        <table celpadding="0" celspacing="0">
+          <tr class="thankyou-wrap">
+            <td colspan="2">
+              <div class="result-rating">
+                  <h1>Thank You</h1>
+                  <h2>We really appreciate your time</h2>
+                  <h3>Here are your Top 5 companies <img src="../../assets/images/information-icon.png"/></h3>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Company Name</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td>360 Capital Group Ltd</td>
+            <td><span>20</span></td>
+          </tr>
+          <tr>
+              <td>3P Learning Ltd</td>
+              <td><span>19.5</span></td>
+            </tr>
+            <tr>
+                <td>88 Energy Limited</td>
+                <td><span>12</span></td>
+              </tr>
+              <tr>
+                  <td>a2 Milk Co Ltd</td>
+                  <td><span>11</span></td>
+                </tr>
+                <tr>
+                    <td>Abacus Property Group</td>
+                    <td><span>8</span></td>
+                  </tr>
+        </table>
+    </div>
+    <div class="result-email">
+        <p><a href="#">Click here</a> to email this to you</p>
+    </div>
+</div>

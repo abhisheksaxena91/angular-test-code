@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="progressbar-section">
+      <div class="btnnextpre section-prevoius">
+        <button type="button"></button>
+      </div>
+        <ul>
+          <li class="inactive active">
+            <span>01</span>
+          </li>
+          <li class="inactive">
+              <span>02</span>
+          </li>
+          <li class="inactive">
+              <span>03</span>
+          </li>
+          <li class="inactive">
+              <span>04</span>
+            </li>
+            <li class="inactive">
+                <span>05</span>
+            </li>
+            <li class="inactive">
+                <span>06</span>
+            </li>
+        </ul>
+        <div class="btnnextpre section-next">
+            <button type="button" (click)= "submitForm()"></button>
+        </div>
+    </div>
+    <div class="row pagetitle-inner">
+      <div class="col-md-12">
+          <h2>Market Theme Questions</h2>
+          <p>Please type your responses to the following questions into the space provided below each question.</p>
+      </div>
+    </div>
+    <div class="content-wrapper shadowfour marketthemequestion-wrapper">
+        <div class="row">
+            <div class="col-md-12 stockList-section">
+                <div class="col-md-5 stockcoverage-q">
+                    <h3> What ESG initiatives does your fund have in place? </h3>
+                </div>
+                <div class="col-md-7 marketthemequestion">
+                    <textarea class="textarea-marketthemequestion"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12 stockList-section">
+                <div class="col-md-5 stockcoverage-q">
+                    <h3> What are the most important ESG factors? </h3>
+                </div>
+                <div class="col-md-7 marketthemequestion">
+                    <textarea class="textarea-marketthemequestion"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12 btnstyle">
+                <button type="button" (click)= "submitForm()" class="btn btn-primary btnlg" >Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+@import '../../../assets/scss/varaible.scss';
+
+.stockcoveragelist
+{
+    .stockcoverageList-section
+    {
+     
+    }
+}
+
+.multiselectangular2
+{
+    .cuppa-dropdown
+    {
+        padding: 0px 15px 15px 15px;
+        .selected-list
+        {
+            border: 1px solid $color13;
+            padding: 8px;
+            border-radius: 6px;
+            .c-btn
+            {
+                padding: 0px;
+                font-size: $fontsize14;
+                color: $color1;
+                span
+                {
+                    color: $color1;  
+                }
+            }
+        }
+    }
+}

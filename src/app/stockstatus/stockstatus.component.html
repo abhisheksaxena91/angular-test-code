@@ -1,0 +1,103 @@
+<div class="container-fluid">
+    <div class="progressbar-section">
+        <div class="btnnextpre section-prevoius">
+            <button type="button" (click)="updateStep()"></button>
+        </div>
+        <ul>
+            <li class="inactive">
+                <span>01</span>
+            </li>
+            <li class="inactive">
+                <span>02</span>
+            </li>
+            <li class="inactive active">
+                <span>03</span>
+            </li>
+            <li class="inactive">
+                <span>04</span>
+            </li>
+            <li class="inactive">
+                <span>05</span>
+            </li>
+            <li class="inactive">
+                <span>06</span>
+            </li>
+        </ul>
+        <div class="btnnextpre section-next">
+            <button type="button" (click)="submitStockStatusList()"></button>
+        </div>
+    </div>
+    <div class="row pagetitle-inner">
+        <div class="col-md-8">
+            <h2>Stock Status</h2>
+            <p>All responses will be aggregated and analysed statistically.</p>
+        </div>
+       
+    </div>
+ 
+    <div class="content-wrapper shadowfour stockcoveragelist">
+        <div class="row">
+            <div class="col-md-12 stockcoverageList-section">
+                <table class="table" cellpading="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Code</th>
+                            <th>Company name</th>
+                            <th>Sector</th>
+                            <th>Group</th>
+                            <th>Industry</th>
+                            <th>Index</th>
+                            <th *ngIf="showAction">Action{{showAction}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stockstatus of stockstatusList; let i=index">
+                            <td>{{((currentPagenumber - 1) * limit)+ (i+1)}}</td>
+                            <td>{{stockstatus.companyCode}}</td>
+                            <td>{{stockstatus.companyName}}</td>
+                            <td>{{stockstatus.sector.title}}</td>
+                            <td>{{stockstatus.group.groupName}}</td>
+                            <td>{{stockstatus.industry.industryName}}</td>
+                            <td>{{stockstatus.indices.title}}</td>
+                            <td *ngIf="showAction">                              
+                                <select class="select-table" (change)="onChange(stockstatus._id, $event.target.value)">
+                                 <option  value="0">Select</option>   
+                                 <option *ngFor="let option of buySell; let i=index" [selected]="setFilters.responses[stockstatus._id] == (i+1)" value="{{option.value}}">{{option.name}}</option>                
+                              </select>                             
+                            </td>
+                        </tr>   
+                    </tbody>
+                </table>
+            </div>   
+        </div>
+    <div class="container pagination-area">
+        <div class="row">
+            <div class="col-md-12">
+                    <ul class="pagination pg-blue">
+                            <!--Arrow left-->
+                            <li class="page-item"  (click)="setPage(currentPagenumber -1)">
+                                <a class="page-link" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                    
+                            <!--Numbers-->
+                            <li class="page-item active" *ngFor="let item of arrayOne(totalPages); let i = index;" (click)="setPage(i+1)"><a class="page-link">{{i+1}}</a></li>
+                           
+                            <!--Arrow right-->
+                            <li class="page-item"  (click)="setPage(currentPagenumber +1)">
+                                <a class="page-link" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+            </div>        
+        </div>
+    </div>
+</div>
+<app-investor [(visible)]="showDialog" [(selectorIndex)]="selectorIndex" (selectValueChange)=selectValueChange($event) class="dialogbox-list">
+        <h2>Add Stock</h2>
+    </app-investor>
